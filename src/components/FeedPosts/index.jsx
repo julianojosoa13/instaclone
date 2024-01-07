@@ -19,8 +19,8 @@ function FeedPosts() {
               <Flex gap={2}>
                 <SkeletonCircle size={10} />
                 <VStack gap={2} alignItems={"flex-start"}>
-                  <Skeleton height={"10PX"} w={200}/>
-                  <Skeleton height={"10PX"} w={200}/>
+                  <Skeleton height={"10pX"} w={200}/>
+                  <Skeleton height={"10pX"} w={200}/>
                 </VStack>
               </Flex>
               <Skeleton w="full">
