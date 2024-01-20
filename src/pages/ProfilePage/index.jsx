@@ -6,7 +6,7 @@ import ProfilePosts from '../../components/Profile/ProfilePosts'
 
 function ProfilePage() {
   return (
-    <Container maxW={"container-lg"} py={5}>
+    <Container maxW={"container.md"} py={5}>
         <Flex
             py={10}
             px={4}
@@ -17,7 +17,14 @@ function ProfilePage() {
         >
             <ProfileHeader />
         </Flex>
-        <Flex>
+        <Flex
+            px={{base: 2, sm: 4}}
+            maxW={"full"}
+            mx={"auto"}
+            borderTop={"1px solid"}
+            borderColor={"whiteAlpha.300"}
+            flexDirection={"column"}
+        >
             <ProfileTabs />
             <ProfilePosts />
         </Flex>
