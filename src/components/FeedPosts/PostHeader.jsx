@@ -1,7 +1,8 @@
 import { Avatar, Box, Flex, Text } from '@chakra-ui/react'
-import React from 'react'
+import React, { useState } from 'react'
 
 function PostHeader({username, avatar}) {
+  const [isFollowing, setIsFollowing] = useState(true)
   return (
     <Flex justifyContent={"space-between"} alignItems={"center"} w="full" my={2}>
         <Flex alignItems={"center"} gap={2}>
@@ -15,8 +16,11 @@ function PostHeader({username, avatar}) {
         </Flex>
         <Box
             cursor={"pointer"}
+            onClick={() => setIsFollowing(!isFollowing)}
         >
-            <Text fontSize={12} color="blue.500" fontWeight={"bold"} _hover={{color: "white"}} transition={"0.2s ease-in-out"}>Unfollow</Text>
+            <Text fontSize={12} color="blue.500" fontWeight={"bold"} _hover={{color: "white"}} transition={"0.2s ease-in-out"}>
+                {isFollowing? "Unfollow" : "Follow" }
+            </Text>
         </Box>
     </Flex>
   )
