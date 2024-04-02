@@ -1,4 +1,4 @@
-import { Avatar, AvatarGroup, Flex, Text, VStack } from '@chakra-ui/react'
+import { Avatar, AvatarGroup, Flex, Text, VStack, Button } from '@chakra-ui/react'
 import React from 'react'
 
 function ProfileHeader() {
@@ -27,6 +27,20 @@ function ProfileHeader() {
                 <Text fontSize={{base: "sm", md:"lg"}}>
                     julianojosoa
                 </Text>
+                <Flex
+                    gap={4}
+                    alignItems={"center"}
+                    justifyContent={"center"}
+                >
+                    <Button
+                        bg="white"
+                        color="black"
+                        _hover={{bg:"whiteAlpha.800 "}}
+                        size={{base: "xs", md: "sm"}}
+                    >
+                        Edit Profile
+                    </Button>
+                </Flex>
             </Flex>
 
         </VStack>
