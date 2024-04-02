@@ -43,6 +43,37 @@ function ProfileHeader() {
                 </Flex>
             </Flex>
 
+            <Flex alignItems={"center"} gap={{base:2, sm:4}}>
+                <Text fontSize={{base: "xs", md: "sm"}}>
+                    <Text as="span" fontWeight={"bold"} mr={1}>4</Text>
+                    Posts
+                </Text>
+                <Text fontSize={{base: "xs", md: "sm"}}>
+                    <Text as="span" fontWeight={"bold"} mr={1}>175</Text>
+                    Followers
+                </Text>
+                <Text fontSize={{base: "xs", md: "sm"}}>  
+                    <Text as="span" fontWeight={"bold"} mr={1}>65</Text>
+                    Following
+                </Text>
+
+            </Flex>
+            <Flex
+                alignItems={"center"}
+                gap={4}
+            >
+                <Text
+                    fontSize={"sm"}
+                    fontWeight={"bold"}
+                >  
+                    Juliano Josoa
+                </Text>
+            </Flex>
+            <Text
+                fontSize={"sm"}
+            >  
+                All we get is all we take - Batman The Long Halloween
+            </Text>
         </VStack>
     </Flex>
   )
